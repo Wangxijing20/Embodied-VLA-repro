@@ -1,0 +1,16 @@
+seed: 42
+out_dir: outputs
+run_name: exp1_plan3d_mini
+
+grid:
+  x: 24
+  y: 24
+  z: 3
+  obstacle_prob: 0.12
+
+agents:
+  n: 5
+
+planner:
+  algo: astar
+  max_expand: 200000
