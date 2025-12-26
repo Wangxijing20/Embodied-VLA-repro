@@ -1,0 +1,6 @@
+{
+  "seed": 42,
+  "run_name": "quickcheck",
+  "out_dir": "outputs",
+  "cwd": "D:\\Code\\github\\Embodied-VLA-repro"
+}
