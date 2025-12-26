@@ -1,25 +1,22 @@
 # Embodied-VLA-repro
-Reproducible reproductions for Vision-Language-Action (VLA) / Embodied AI papers.
-Goal: build clean pipelines across **env → data → training/finetuning → evaluation → demo**.
+
+Reproducible VLA/Embodied AI reproduction repo (Tsinghua).  
+Focus: data → training/finetuning → evaluation → deployment, with clear experiment logs.
 
 ## Repo Structure
-- `1_papers/` paper tracker (what/why/how to reproduce)
-- `2_repro/` codebases (one folder per paper/project)
-- `3_experiments/` logs, configs, checkpoints pointers (no large files committed)
-- `0_readme/` templates (checklists, writeups)
-- `4_assets/` figures for README / docs
+- `0_readme/` : checklists & templates (how to reproduce, how to log)
+- `1_papers/` : paper list + reading notes
+- `2_repro/` : reproduction code skeleton (configs/scripts/common utils)
+- `3_experiments/` : run logs, results, and comparisons
+- `4_assets/` : figures, demo gifs, slides, etc.
 
-## Repro Policy (must be reproducible)
-- Every repro has: `README`, `env.yml` or `requirements.txt`, `run.sh`, and `results.md`.
-- Store large artifacts via links (cloud) and keep repo lightweight.
-- Record exact commits + seeds + key metrics.
+## How I Work (Repro Protocol)
+1) Select a target paper + define scope  
+2) Implement minimal runnable pipeline  
+3) Match metrics / ablate key components  
+4) Document deviations + commit evidence (configs, logs, results)
 
-## Current Focus
-- VLA + Embodied tasks (policy learning, multimodal perception, action decoding)
-- Simulation-first, hardware-later (clean interface for real robots)
-
-## Status
-- [ ] Select Paper #1
-- [ ] Setup baseline environment + first run
-- [ ] Report metrics + failure cases
-
+## Current Status
+- Repo initialized ✅
+- SSH push verified ✅
+- Next: add reproducible run template under `2_repro/` (configs + scripts)
